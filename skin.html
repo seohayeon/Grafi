@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+ <title>[##_page_title_##]</title>
+ <link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
+ <link rel="stylesheet" href="./style.css">
+ <!--[if lt IE 9]>
+ <script src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-1.12.4.min.js"></script>
+ <![endif]-->
+ <!--[if gte IE 9]><!-->
+ <script src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-3.2.1.min.js"></script>
+ <!--<![endif]-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body id='[##_body_id_##]'>
+<s_t3>
+		
+  
+		
+<div id="container">
+	
+	<s_cover_group>
+<s_cover_rep>
+
+<s_cover name='list'>
+<div id="mArticle" class="article_skin">
+				 <div id="header_container">
+	 <div class="header_content">
+<div id="blogtitle">[##_title_##]</div>
+	 <div id="blog_desc">[##_desc_##]</div>
+		 </div>
+</div> 
+<s_cover_item>
+	 <div id="postlistblock">
+<s_cover_item_article_info>
+<div class="list_content">
+		<div id="category_tag" onClick="location.href='[##_cover_item_category_url_##]'"># [##_cover_item_category_##]</div>
+	
+  <a class="article-item" href="[##_cover_item_url_##]">					
+		
+							<div class="list_thumbnail">
+							 <s_cover_item_thumbnail> <img src="//i1.daumcdn.net/thumb/C230x230/?fname=[##_cover_item_thumbnail_##]" id="thumbnail_img"> </s_cover_item_thumbnail>
+                 </div>
+		 <div class="listtitle">[##_cover_item_title_##]</div>
+							
+                <p class="listsummary">[##_cover_item_summary_##]</p>
+            </a>
+	 <div class="info">
+                <span href="[##_cover_item_category_url_##]">[##_cover_item_category_##]</span>
+                <span class="pipe">|</span>
+                <span class="date">[##_cover_item_date_##]</span>
+            </div>
+</div>
+</s_cover_item_article_info>
+
+<s_cover_item_not_article_info>
+<div class="list_content">
+<s_cover_item_thumbnail>
+<a href="[##_cover_item_url_##]" class="thumbnail_post"><img src="//i1.daumcdn.net/thumb/C230x230/?fname=[##_cover_item_thumbnail_##]"></a>
+</s_cover_item_thumbnail>
+<a href="[##_cover_item_url_##]" class="link_post">
+<strong class="tit_post">[##_cover_item_title_##]</strong>
+<p class="txt_post">[##_cover_item_summary_##]</p>
+</a>
+</div>
+</s_cover_item_not_article_info>
+		 </div>
+					</s_cover_item>
+
+</div>
+</s_cover>
+</s_cover_rep>
+</s_cover_group>
+							
+	<s_article_rep>   	
+		<s_permalink_article_rep>
+			<div id="article_wrap">
+       <div class="titleWrap">
+    <div>[##_article_rep_title_##]</div>
+				 </div>
+				  <div class="postinfo">
+			<span>[##_blogger_##]</span>	
+				  <span class="pipe">|</span>
+<span class="date">[##_article_rep_date_##]</span>
+  <span class="pipe">|</span>
+ <span class="category">
+      <a href="[##_article_rep_category_link_##]">#[##_article_rep_category_##]</a>
+    </span>
+						</div>
+  <div class="article">
+    [##_article_rep_desc_##]
+  </div>		
+				</div>
+			<!-- 댓글 그룹 시작 -->
+			<s_rp>
+				<!-- 댓글 입력폼 시작 -->
+       <s_rp_input_form>
+  <div class="commentWrite">
+    <p>
+      <textarea name="[##_rp_input_comment_##]" class="replyinput"  placeholder="여러분의 소중한 댓글을 입력해주세요😀"></textarea>
+    </p>
+		 <div id="reply_set">
+		<s_rp_member>
+      <s_rp_guest>        
+				
+          <input type="text" name="[##_rp_input_name_##]" value="[##_guest_name_##]" placeholder="이름" />             
+          <input type="password" maxlength="8" name="[##_rp_input_password_##]" placeholder="비밀번호" value="[##_rp_admin_check_##]"/>
+        
+      </s_rp_guest>
+			
+      <div class="secretWrap">
+        <input type="checkbox" name="[##_rp_input_is_secret_##]" class="checkbox" class="form-control"/>
+        <label for="secret"> secret </label>
+      </div>
+    </s_rp_member>
+   <div class="submitWrap">
+      <button type="submit" value="댓글 달기" onclick="[##_rp_onclick_submit_##]" class="btn btn-primary">등록</button>
+   </div></div>
+			  
+  </div>
+</s_rp_input_form>
+				<!-- 댓글 입력폼 끝 -->
+				<!-- 댓글 리스트 시작 -->
+				<div class="commentList">
+  <s_rp_container>
+    <ol>
+      <s_rp_rep>
+        <li id='[##_rp_rep_id_##]'>
+					<script>
+	$(document).ready( function() {
+		let thisId;
+        $( '.reply[##_rp_rep_id_##]' ).click( function() {			
+					event.stopPropagation();
+          $( '.replyblock[##_rp_rep_id_##]' ).toggle();
+        });
+		$(document).click(function(){
+    $('.replyblock[##_rp_rep_id_##]').hide();
+});
+      });
+	</script>
+          <div class="[##_rp_rep_class_##]" id="replyBlock">
+            <div class="reply_image"><img src="[##_rp_rep_logo_##]"/></div>
+						
+						<div id="toggle_btn" class="reply[##_rp_rep_id_##]">
+						<i class="fas fa-ellipsis-v"></i>
+						</div>
+            <div id="toggle_block" class="replyblock[##_rp_rep_id_##]">
+								<div class="control">
+              <a href="[##_rp_rep_link_##]" class="address">
+                <div>댓글주소</div>
+              </a>
+              <a href="#" onclick="[##_rp_rep_onclick_delete_##]" class="modify">
+                <div>수정/삭제</div>
+              </a>
+              <a href="#" onclick="[##_rp_rep_onclick_reply_##]" class="write">
+                <div>댓글쓰기</div>
+              </a>
+            </div>
+								</div>
+						
+            <div class="name">[##_rp_rep_name_##]</div>
+						
+            <div  id="re_content">[##_rp_rep_desc_##]</div>
+						<div class="date"> [##_rp_rep_date_##]</div>
+          </div>
+          <s_rp2_container>
+            <ul>
+              <s_rp2_rep>
+                <li id='[##_rp_rep_id_##]'>
+									<script>
+	$(document).ready( function() {
+		let thisId;
+        $( '.reply[##_rp_rep_id_##]' ).click( function() {			
+					event.stopPropagation();
+          $( '.replyblock[##_rp_rep_id_##]' ).toggle();
+        });
+		$(document).click(function(){
+    $('.replyblock[##_rp_rep_id_##]').hide();
+});
+      });
+	</script>
+                  <div class="[##_rp_rep_class_##]" id="re_replyBlock">
+										<div class="reply_image"><img src="[##_rp_rep_logo_##]"/></div>
+										
+										<div id="re_toggle_btn" class="reply[##_rp_rep_id_##]">
+						<i class="fas fa-ellipsis-v"></i>
+						</div>
+            <div id="re_toggle_block" class="replyblock[##_rp_rep_id_##]">
+								<div class="control">
+              <a href="[##_rp_rep_link_##]" class="address">
+                <div>댓글주소</div>
+              </a>
+              <a href="#" onclick="[##_rp_rep_onclick_delete_##]" class="modify">
+                <div>수정/삭제</div>
+              </a>
+            </div>
+								</div>
+										
+										
+                    <div class="name" id="re_replyName">[##_rp_rep_name_##]</div>
+                
+                    <div>[##_rp_rep_desc_##]</div>
+										  <div class="date"> [##_rp_rep_date_##]</div>
+                  </div>
+                </li>
+              </s_rp2_rep>
+            </ul>
+          </s_rp2_container>
+        </li>
+      </s_rp_rep>
+    </ol>
+  </s_rp_container>
+</div>
+				<!-- 댓글 리스트 끝 -->
+			</s_rp>
+			<!-- 댓글 그룹 끝 -->
+    </s_permalink_article_rep>
+		
+</s_article_rep>        
+	
+<s_list>
+	<div id="header_container">
+	 <div class="header_content">
+<div id="blogtitle">[##_list_conform_##]</div>
+	 <div id="blog_desc">[##_list_conform_##]'에 해당되는 글 [##_list_count_##]건</div>
+		 </div>
+</div> 
+  <div>
+      <s_list_rep>
+        <div id="postlistblock">
+						<div id="category_tag" onClick="location.href='[##_list_rep_category_link_##]'"># [##_list_rep_category_##]</div>
+          
+					  <a class="article-item" href="[##_list_rep_link_##]">
+							
+							<div class="list_thumbnail">
+							 <s_list_rep_thumbnail>
+            <img src="[##_list_rep_thumbnail_##]" id="thumbnail_img">
+          </s_list_rep_thumbnail>
+                 </div>
+                <div class="listtitle">[##_list_rep_title_##]</div>
+							
+                <p class="listsummary">[##_list_rep_summary_##]</p>
+            </a>
+		  <div class="info">
+                <span href="[##_list_rep_category_link_##]">[##_list_rep_category_##]</span>
+                <span class="pipe">|</span>
+                <span class="date">[##_list_rep_regdate_##]</span>
+            </div>
+        </div>
+      </s_list_rep>
+  </div>
+</s_list>
+		
+
+	
+		<s_tag>
+    <div class="taglog">
+        <h3>태그</h3>
+        <ul>
+            <s_tag_rep>
+            <li>
+                <a href="[##_tag_link_##]" class="[##_tag_class_##]">[##_tag_name_##]</a>
+            </li>
+            </s_tag_rep>
+        </ul>
+    </div>
+</s_tag>
+	
+	<s_guest>
+  <div class="guestbook">
+    <h3>방명록</h3>
+		
+    <s_guest_input_form>
+  <div class="guestWrite">
+    <s_guest_member>
+      <s_guest_form>
+        <div>
+          <input type="text" name="[##_guest_input_name_##]" value="[##_guest_name_##]" />
+          <label for="name"> : 이름 </label>
+        </div>
+        <div>
+          <input type="password" maxlength="8" name="[##_guest_input_password_##]" value="[##_guest_password_##]" />
+          <label for="password"> : 패스워드 </label>
+        </div>
+        <div>
+          <input type="text" name="[##_guest_input_homepage_##]" value="[##_guest_homepage_##]" />
+          <label for="homepage"> : 홈페이지 </label>
+        </div>
+      </s_guest_form>
+    </s_guest_member>
+    <div>
+      <textarea name="[##_guest_textarea_body_##]" cols="50" rows="6"></textarea>
+    </div>
+    <div>
+      <input type="submit" value="안부 남기기" onclick="[##_guest_onclick_submit_##]"/>
+    </div>
+  </div>
+</s_guest_input_form>
+		
+   <s_guest_container>
+  <div class="guestList">
+    <ol>
+      <s_guest_rep>
+        <li id='[##_guest_rep_id_##]'>
+          <div class="[##_guest_rep_class_##]">
+            <span class="name">[##_guest_rep_name_##]</span>
+            <span class="date"> [##_guest_rep_date_##]</span>
+            <span class="control">
+              <a href="#" onclick="[##_guest_rep_onclick_delete_##]">MODIFY/DELETE</a>
+              <a href="#" onclick="[##_guest_rep_onclick_reply_##]">REPLY</a>
+            </span>
+            <p>[##_guest_rep_desc_##]</p>
+          </div>
+          <s_guest_reply_container>
+            <ul>
+              <s_guest_reply_rep>
+              <li id='[##_guest_rep_id_##]'>
+                <div class="[##_guest_rep_class_##]">
+                  <span class="name">[##_guest_rep_name_##]</span>
+                  <span class="date"> [##_guest_rep_date_##]</span>
+                  <span class="control">
+                    <a href="#" onclick="[##_guest_rep_onclick_delete_##]">MODIFY/DELETE </a>
+                  </span>
+                  <p>[##_guest_rep_desc_##]</p>
+                </div>
+              </li>
+              </s_guest_reply_rep>
+            </ul>
+          </s_guest_reply_container>
+        </li>
+      </s_guest_rep>
+    </ol>
+  </div>
+</s_guest_container>
+		
+  </div>
+</s_guest>
+	
+	
+<div id="sidebar">
+ 
+</div><!-- sidebar close -->
+
+ <div id="footer">
+
+ </div> <!-- footer close -->
+
+</div> <!-- container close -->
+	
+</s_t3>
+
+<script src="./images/script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin>
+  <information>
+<name>DEVELOPER</name>
+    <version>1.0</version>
+    <description>
+      <![CDATA[개발자를 위한 티스토리 스킨입니다.]]>
+    </description>
+    <license>
+      <![CDATA[자유롭게 수정이 가능하며, 저작권 표시하에 재배포 가능합니다.]]>
+    </license>
+  </information>
+  <author>
+    <name>seohayeon</name>
+    <homepage>https://seohayeon.me</homepage>
+    <email>hyseo0208@gmail.com</email>
+  </author>
+  <default>
+    <recentEntries>5</recentEntries>
+    <recentComments>5</recentComments>
+    <recentTrackbacks>5</recentTrackbacks>
+    <itemsOnGuestbook>10</itemsOnGuestbook>
+    <tagsInCloud>30</tagsInCloud>
+    <sortInCloud>3</sortInCloud>
+    <expandComment>0</expandComment>
+    <expandTrackback>0</expandTrackback>
+    <lengthOfRecentNotice>25</lengthOfRecentNotice>
+    <lengthOfRecentEntry>27</lengthOfRecentEntry>
+    <lengthOfRecentComment>30</lengthOfRecentComment>
+    <lengthOfRecentTrackback>30</lengthOfRecentTrackback>
+    <lengthOfLink>30</lengthOfLink>
+    <showListOnCategory>1</showListOnCategory>
+    <showListOnArchive>1</showListOnArchive>
+    <commentMessage>
+      <none>댓글이 없습니다.</none>
+      <single>댓글 &lt;span class="cnt"&gt;하나&lt;/span&gt; 달렸습니다.</single>
+    </commentMessage>
+    <trackbackMessage>
+      <none>받은 트랙백이 없고</none>
+      <single>트랙백이 &lt;span class="cnt"&gt;하나&lt;/span&gt;이고</single>
+    </trackbackMessage>
+    <tree>
+      <color>000000</color>
+      <bgColor>ffffff</bgColor>
+      <activeColor>000000</activeColor>
+      <activeBgColor>eeeeee</activeBgColor>
+      <labelLength>27</labelLength>
+      <showValue>1</showValue>
+    </tree>
+    <contentWidth>500</contentWidth>
+  </default>
+  <cover>
+  <item>
+    <name>list</name>
+    <label><![CDATA[리스트]]></label>
+    <description><![CDATA[글 리스트를 표시합니다.]]></description>
+  </item>
+</cover>
+</skin>

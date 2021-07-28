@@ -1,0 +1,239 @@
+body{
+	font-family:noto-sans;
+	background: #fff;
+	background-repeat:no-repeat;
+	min-height:100vh;
+}
+a:link { color: #5e9aee; text-decoration: none;}
+a:visited { color: #5e9aee; text-decoration: none;}
+a:hover { color: #5e9aee; text-decoration: none;}
+
+#postlistblock{
+	margin:0 auto;
+	width:95%;
+	margin-top:1rem;
+	border-radius: 0.7rem;
+background: #ffffff;
+box-shadow:  20px 20px 60px #d9d9d9,
+             -20px -20px 60px #ffffff;
+	display:block;
+	position:relative;
+	min-height:16rem;
+	overflow:hidden;
+	-webkit-tap-highlight-color:transparent;
+}
+li{
+   list-style:none;
+   }
+#postlistblock a:link { color: black; text-decoration: none;}
+#postlistblock a:visited { color: black; text-decoration: none;}
+#postlistblock a:hover { color: black; text-decoration: none;}
+.listtitle{
+	font-size:1.4rem;
+	width:100%;
+	font-weight:700;
+	margin-top:1rem;
+	margin-left:2.5rem;
+}
+.listsummary{
+	line-height: 1.6;
+	max-height: 6.4em;
+overflow: hidden;
+	display: -webkit-box;
+-webkit-line-clamp: 4;
+-webkit-box-orient: vertical;
+	margin-top:1rem;
+	margin-left:2.5rem;
+}
+.list_thumbnail{
+	float:right;
+	margin-top:3rem;
+	border-radius:1rem;
+	height:12rem;	
+	overflow: hidden;
+	margin-right:2rem;
+	margin-left:2rem;
+	display:block;
+}
+#thumbnail_img{
+	width:12rem;
+	width:12rem;
+}
+.info{
+	margin-left:2.5rem;
+	margin-bottom:2rem;
+	display:block;
+	color:gray;
+}
+#category_tag{
+	min-width:4rem;
+	height:1.5rem;
+	background:#f2f2f3;
+	margin-top:2rem;
+	margin-left:2.5rem;
+	border-radius:0.5rem;
+	display:inline-block;
+	padding:0.2rem 1rem 0.2rem 1rem;
+	line-height:1.5rem;
+	font-size:0.85rem;
+	font-weight:700;
+	color:#5e9aee;
+}
+#blogtitle{
+	font-size:3rem;
+	text-align:center;
+	font-weight:600;
+	
+}
+#header_container{
+	height:20rem;
+	position:relative;
+}
+#blog_desc{
+	text-align:center;
+	margin-top:1.8rem;
+	color:#5e9aee;
+	white-space:nowrap;
+	font-size:1.5rem;
+}
+.header_content{
+	top:50%;
+	left:50%;
+	position:absolute;
+	transform: translate(-50%, -50%);
+}
+#article_wrap{
+	padding:4rem;	
+	padding-top:6rem;
+	display:block;
+}
+.postinfo{
+	color:gray;
+	font-size:0.9rem;
+}
+.titleWrap{
+	font-size:2rem;
+	font-weight:800;
+	margin-bottom:1rem;	
+}
+.replyinput{
+	width:40rem;
+	display:block;
+	margin:0 auto;
+	height:5rem;
+	background:none;
+	border:solid 2px #e2e2e2;
+	&:focus{outline:none;}
+}
+.replyinput:focus {
+  outline:none;
+}
+.reply_image{
+	position:relative; 
+	width:2.5rem;
+	border-radius:2rem; 
+	overflow:hidden;
+	height:2.5rem;
+	float:left;
+	margin-right:1rem;
+}
+.reply_image img{
+	position:absolute; 
+	width:100%; 
+	height:100%;
+}
+#reply_set{
+	margin:0 auto;
+	width:40rem;
+	text-align:center;
+	height:5rem;
+	padding-bottom:5rem;
+}
+#reply_set input[type=password]{
+	background:none;
+	border:solid 2px #e2e2e2;
+	height:2rem;
+	width:45%;
+	float:right;
+	&:focus{outline:none;}
+}
+#reply_set input[type=text]{
+	background:none;
+	border:solid 2px #e2e2e2;
+	width:45%;
+	height:2rem;
+	float:left;
+	&:focus{outline:none;}
+}
+.secretWrap{
+	float:left;
+	margin-top:1rem;
+}
+.submitWrap{
+	float:right;
+	margin-top:1rem;
+}
+input:focus{outline:none;}
+.commentList{padding:2.5rem;}	
+#replyBlock{
+	margin-bottom:1rem;
+	border-bottom:1.5px solid #e2e2e2;
+	padding-bottom:1rem;
+	position:relative;
+}
+#re_replyBlock{
+	margin-bottom:1rem;
+	background:#f2f2f2;
+	border-radius:1rem;
+	padding-bottom:1rem;
+	padding-top:1rem;
+	position:relative;
+	padding-left:1rem;
+}
+#replyBlock .date{
+	margin-left:3.5rem;
+	color:gray;
+	font-size:0.9rem;
+}
+#replyBlock .name{
+	font-weight:700;
+}
+#re_replyBlock .date{
+	margin-left:3.5rem;
+	color:gray;
+	font-size:0.9rem;
+}
+#re_replyName{
+	font-weight:700;
+	color:black;
+	}
+#toggle_btn{
+	position:absolute;
+	right:0;
+	z-index: 1;
+}
+#toggle_block{
+	position:absolute;
+	right:0;
+	top:1.3rem;
+	background:#fff;
+	display:none;
+	padding:0.5rem;
+	border:1px solid #f4f4f4;
+	z-index: 2;
+}
+#re_toggle_btn{
+	position:absolute;
+	right:1rem;
+	z-index: 1;
+}
+#re_toggle_block{
+	position:absolute;
+	right:0;
+	top:2rem;
+	background:#fff;
+	display:none;
+	padding:0.5rem;
+	border:1px solid #f4f4f4;
+	z-index: 2;
+}
