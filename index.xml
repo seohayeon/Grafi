@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <skin>
   <information>
-<name>DEVELOPER</name>
+<name>Grafí</name>
     <version>1.0</version>
     <description>
-      <![CDATA[개발자를 위한 티스토리 스킨입니다.]]>
+      <![CDATA[뉴모피즘을 사용한 심플하고 깔끔한 티스토리 스킨입니다.]]>
     </description>
     <license>
-      <![CDATA[자유롭게 수정이 가능하며, 저작권 표시하에 재배포 가능합니다.]]>
+      <![CDATA[자유롭게 수정이 가능하며, 저작권 표시하에 재배포 가능합니다. 단, 푸터는 지우시지 말아주세요]]>
     </license>
   </information>
   <author>

@@ -13,13 +13,11 @@
  <script src="//t1.daumcdn.net/tistory_admin/lib/jquery/jquery-3.2.1.min.js"></script>
  <!--<![endif]-->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+       <link rel="stylesheet" href="./images/all.min.css">
 </head>
 <body id='[##_body_id_##]'>
 <s_t3>
-		
-  
-		
+
 <div id="container">
 	
 	<s_cover_group>
@@ -30,20 +28,25 @@
 				 <div id="header_container">
 	 <div class="header_content">
 <div id="blogtitle">[##_title_##]</div>
-	 <div id="blog_desc">[##_desc_##]</div>
+	 <div id="blog_desc">"[##_desc_##]"</div>
 		 </div>
-</div> 
+</div> <div id="list_container">
 <s_cover_item>
 	 <div id="postlistblock">
+		 
 <s_cover_item_article_info>
 <div class="list_content">
 		<div id="category_tag" onClick="location.href='[##_cover_item_category_url_##]'"># [##_cover_item_category_##]</div>
 	
-  <a class="article-item" href="[##_cover_item_url_##]">					
+  <a class="article-item" href="[##_cover_item_url_##]">				
 		
-							<div class="list_thumbnail">
-							 <s_cover_item_thumbnail> <img src="//i1.daumcdn.net/thumb/C230x230/?fname=[##_cover_item_thumbnail_##]" id="thumbnail_img"> </s_cover_item_thumbnail>
-                 </div>
+	
+							 <s_cover_item_thumbnail>
+								 <div class="list_thumbnail">
+									 <img src="[##_cover_item_thumbnail_##]" id="thumbnail_img"></div> 			
+								 
+		</s_cover_item_thumbnail>
+		 
 		 <div class="listtitle">[##_cover_item_title_##]</div>
 							
                 <p class="listsummary">[##_cover_item_summary_##]</p>
@@ -53,7 +56,8 @@
                 <span class="pipe">|</span>
                 <span class="date">[##_cover_item_date_##]</span>
             </div>
-</div>
+						
+</div>	
 </s_cover_item_article_info>
 
 <s_cover_item_not_article_info>
@@ -69,13 +73,14 @@
 </s_cover_item_not_article_info>
 		 </div>
 					</s_cover_item>
-
+</div>
 </div>
 </s_cover>
 </s_cover_rep>
-</s_cover_group>
-							
-	<s_article_rep>   	
+</s_cover_group>	
+	
+	<s_article_rep>
+		<div id="list_container">
 		<s_permalink_article_rep>
 			<div id="article_wrap">
        <div class="titleWrap">
@@ -217,7 +222,7 @@
 				<!-- 댓글 리스트 끝 -->
 			</s_rp>
 			<!-- 댓글 그룹 끝 -->
-    </s_permalink_article_rep>
+    </s_permalink_article_rep></div>
 		
 </s_article_rep>        
 	
@@ -225,10 +230,10 @@
 	<div id="header_container">
 	 <div class="header_content">
 <div id="blogtitle">[##_list_conform_##]</div>
-	 <div id="blog_desc">[##_list_conform_##]'에 해당되는 글 [##_list_count_##]건</div>
+	 <div id="blog_desc">"[##_desc_##]"</div>
 		 </div>
 </div> 
-  <div>
+  <div id="list_container">
       <s_list_rep>
         <div id="postlistblock">
 						<div id="category_tag" onClick="location.href='[##_list_rep_category_link_##]'"># [##_list_rep_category_##]</div>
@@ -253,7 +258,8 @@
       </s_list_rep>
   </div>
 </s_list>
-		
+	
+	
 
 	
 		<s_tag>
@@ -271,88 +277,327 @@
 	
 	<s_guest>
   <div class="guestbook">
+		<div id="guestbook_title">
     <h3>방명록</h3>
+		</div>
 		
-    <s_guest_input_form>
-  <div class="guestWrite">
-    <s_guest_member>
-      <s_guest_form>
-        <div>
-          <input type="text" name="[##_guest_input_name_##]" value="[##_guest_name_##]" />
-          <label for="name"> : 이름 </label>
-        </div>
-        <div>
-          <input type="password" maxlength="8" name="[##_guest_input_password_##]" value="[##_guest_password_##]" />
-          <label for="password"> : 패스워드 </label>
-        </div>
-        <div>
-          <input type="text" name="[##_guest_input_homepage_##]" value="[##_guest_homepage_##]" />
-          <label for="homepage"> : 홈페이지 </label>
-        </div>
+      <s_guest_input_form>
+  <div class="commentWrite">
+    <p>
+      <textarea name="[##_guest_textarea_body_##]" class="replyinput"  placeholder="여러분의 소중한 메시지를 남겨주세요😀"></textarea>
+    </p>
+		 <div id="reply_set">
+		<s_guest_member>
+      <s_guest_form>    
+				
+          <input type="text" name="[##_guest_input_name_##]" value="[##_guest_name_##]" placeholder="이름" />             
+          <input type="password" maxlength="8" name="[##_guest_input_password_##]" placeholder="비밀번호" value="[##_guest_admin_check_##]"/>
+        
       </s_guest_form>
+			
+      <div class="secretWrap">
+        <input type="checkbox" name="[##_guest_input_is_secret_##]" class="checkbox" class="form-control"/>
+        <label for="secret"> secret </label>
+      </div>
     </s_guest_member>
-    <div>
-      <textarea name="[##_guest_textarea_body_##]" cols="50" rows="6"></textarea>
-    </div>
-    <div>
-      <input type="submit" value="안부 남기기" onclick="[##_guest_onclick_submit_##]"/>
-    </div>
+   <div class="submitWrap">
+      <button type="submit" value="댓글 달기" onclick="[##_guest_onclick_submit_##]" class="btn btn-primary">등록</button>
+   </div></div>
+			  
   </div>
 </s_guest_input_form>
 		
-   <s_guest_container>
-  <div class="guestList">
+			<div class="commentList" style="margin-top:2rem;">
+  <s_guest_container>
     <ol>
       <s_guest_rep>
         <li id='[##_guest_rep_id_##]'>
-          <div class="[##_guest_rep_class_##]">
-            <span class="name">[##_guest_rep_name_##]</span>
-            <span class="date"> [##_guest_rep_date_##]</span>
-            <span class="control">
-              <a href="#" onclick="[##_guest_rep_onclick_delete_##]">MODIFY/DELETE</a>
-              <a href="#" onclick="[##_guest_rep_onclick_reply_##]">REPLY</a>
-            </span>
-            <p>[##_guest_rep_desc_##]</p>
+					<script>
+	$(document).ready( function() {
+		let thisId;
+        $( '.reply[##_guest_rep_id_##]' ).click( function() {			
+					event.stopPropagation();
+          $( '.replyblock[##_guest_rep_id_##]' ).toggle();
+        });
+		$(document).click(function(){
+    $('.replyblock[##_guest_rep_id_##]').hide();
+});
+      });
+	</script>
+          <div class="[##_guest_rep_class_##]" id="replyBlock">
+            <div class="reply_image"><img src="[##_guest_rep_logo_##]"/></div>
+						
+						<div id="toggle_btn" class="reply[##_guest_rep_id_##]">
+						<i class="fas fa-ellipsis-v"></i>
+						</div>
+            <div id="toggle_block" class="replyblock[##_guest_rep_id_##]">
+								<div class="control">
+              <a href="#" onclick="[##_guest_rep_onclick_delete_##]" class="modify">
+                <div>수정/삭제</div>
+              </a>
+              <a href="#" onclick="[##_guest_rep_onclick_reply_##]" class="write">
+                <div>댓글쓰기</div>
+              </a>
+            </div>
+								</div>
+						
+            <div class="name">[##_guest_rep_name_##]</div>
+						
+            <div  id="re_content">[##_guest_rep_desc_##]</div>
+						<div class="date"> [##_guest_rep_date_##]</div>
           </div>
           <s_guest_reply_container>
             <ul>
               <s_guest_reply_rep>
-              <li id='[##_guest_rep_id_##]'>
-                <div class="[##_guest_rep_class_##]">
-                  <span class="name">[##_guest_rep_name_##]</span>
-                  <span class="date"> [##_guest_rep_date_##]</span>
-                  <span class="control">
-                    <a href="#" onclick="[##_guest_rep_onclick_delete_##]">MODIFY/DELETE </a>
-                  </span>
-                  <p>[##_guest_rep_desc_##]</p>
-                </div>
-              </li>
+                <li id='[##_guest_rep_id_##]'>
+									<script>
+	$(document).ready( function() {
+		let thisId;
+        $( '.reply[##_guest_rep_id_##]' ).click( function() {			
+					event.stopPropagation();
+          $( '.replyblock[##_guest_rep_id_##]' ).toggle();
+        });
+		$(document).click(function(){
+    $('.replyblock[##_guest_rep_id_##]').hide();
+});
+      });
+	</script>
+                  <div class="[##_guest_rep_class_##]" id="re_replyBlock">
+										<div class="reply_image"><img src="[##_guest_rep_logo_##]"/></div>
+										
+										<div id="re_toggle_btn" class="reply[##_guest_rep_id_##]">
+						<i class="fas fa-ellipsis-v"></i>
+						</div>
+            <div id="re_toggle_block" class="replyblock[##_guest_rep_id_##]">
+								<div class="control">
+              <a href="#" onclick="[##_guest_rep_onclick_delete_##]" class="modify">
+                <div>수정/삭제</div>
+              </a>
+            </div>
+								</div>
+										
+										
+                    <div class="name" id="re_replyName">[##_guest_rep_name_##]</div>
+                
+                    <div>[##_guest_rep_desc_##]</div>
+										  <div class="date"> [##_guest_rep_date_##]</div>
+                  </div>
+                </li>
               </s_guest_reply_rep>
             </ul>
           </s_guest_reply_container>
         </li>
       </s_guest_rep>
     </ol>
-  </div>
-</s_guest_container>
-		
+  </s_guest_container>
+</div>
   </div>
 </s_guest>
 	
 	
-<div id="sidebar">
- 
-</div><!-- sidebar close -->
+	<s_notice_rep>
+		<div id="list_container">
+  <s_index_article_rep>
+  <div class="list_content">
+		 <div id="postlistblock">
+			 	<div id="category_tag" onClick="location.href='[##_notice_rep_category_link_##]'">#공지사항</div>
+    <a class="article-item" href="[##_notice_rep_link_##]">
+							
+							<div class="list_thumbnail">
+							 <s_notice_rep_thumbnail>
+            <img src="[##_notice_rep_thumbnail_url_##]" id="thumbnail_img">
+          </s_notice_rep_thumbnail>
+                 </div>
+                <div class="listtitle">[##_notice_rep_title_##]</div>
+							
+                <p class="listsummary">[##_notice_rep_summary_##]</p>
+            </a>
+			 
+			  <div class="info">
+                <span href="[##_notice_rep_category_link_##]">공지사항</span>
+                <span class="pipe">|</span>
+                <span class="date">[##_notice_rep_simple_date_##]</span>
+				
+            </div>
+		 </div>
+  </div>
+</s_index_article_rep>
+				</div>
+			<s_permalink_article_rep>
+			<div id="article_wrap">
+       <div class="titleWrap">
+    <div>[##_notice_rep_title_##]</div>
+				 </div>
+				  <div class="postinfo">
+			<span>[##_blogger_##]</span>	
+				  <span class="pipe">|</span>
+<span class="date">[##_notice_rep_date_##]</span>
+  <span class="pipe">|</span>
+ <span class="category">
+      <a href="/notice">#공지사항</a>
+    </span>
+						</div>
+  <div class="article">
+    [##_notice_rep_desc_##]
+  </div>		
+				</div>
+    </s_permalink_article_rep>
+</s_notice_rep>
 
- <div id="footer">
+	
+	<s_article_protected>
+    <!-- 보호 글 -->
+    <s_permalink_article_rep>
+       <div class="entryProtected" id="list_container">
+    <h2><a href="[##_article_rep_link_##]">[##_article_rep_title_##]</a></h2>
+    <span class="date">[##_article_rep_date_##]</span>
+    <p>보호되어 있는 글입니다. 내용을 보시려면 비밀번호를 입력하세요.</p>
+    <p>
+      <label for="[##_article_password_##]">🔒 </label>
+      <input type="password" class="form-control" maxlength="16" id="[##_article_password_##]" name="[##_article_password_##]" value="" onkeydown="if (event.keyCode == 13)[##_article_dissolve_##]" style="width:15rem; display:inline;"/>
+      <input type="button" class="submit btn btn-primary" value="submit" onclick="[##_article_dissolve_##]" />
+    </p>
+  </div>
+    </s_permalink_article_rep>
+</s_article_protected>
 
+
+	<div id="sidebar">
+		<div id="hit_list">
+		 <s_sidebar>
+			 <s_sidebar_element>
+  <!-- 카테고리 -->
+  <div class="category">
+    <div id="sidetitle">카테고리</div>
+    [##_category_list_##]
+  </div>
+</s_sidebar_element>
+			  </s_sidebar>
+			</div>
+		<div id="hit_list">
+  <s_sidebar>
+    <!-- 오른쪽 사이드바 -->			
+    <s_sidebar_element>
+  <!-- 이 블로그 인기글 -->
+  <div class="popularPost" style="line-height:2rem;">
+    <div id="sidetitle">Top Posts </div>
+    <ol>
+      <s_rctps_popular_rep>
+        <li>
+          <a href="[##_rctps_rep_link_##]">[##_rctps_rep_title_##]</a>
+        </li>
+      </s_rctps_popular_rep>
+    </ol>
+  </div>
+</s_sidebar_element>
+   <s_sidebar_element>
+  <!-- 태그 클라우드 -->
+  <div class="tagbox">
+    <div id="sidetitle">Top Keywords</div>
+    <ul>
+      <s_random_tags><li>
+				
+        <div onClick="location.href='[##_tag_link_##]'" id="taglist">
+          #[##_tag_name_##]
+        </div></li>
+      </s_random_tags>
+    </ul>
+  </div>
+</s_sidebar_element>
+  </s_sidebar>
+</div>
+		
+  <s_sidebar>
+    <!-- 배너 삽입 사이드바 -->
+    <s_sidebar_element>
+      <!-- 배너 모듈 - 태터툴즈 -->
+     
+    </s_sidebar_element>
+    <s_sidebar_element>
+      <!-- 배너모듈 - 올린 -->
+      
+    </s_sidebar_element>
+    <s_sidebar_element>
+      <!-- 배너모듈 - RSS Feed -->
+     
+    </s_sidebar_element>
+  </s_sidebar>
+
+		
+	</div>
+<div id="footer">
+<a href="//seohayeon.me">© SeoHayeon</a>. All rights reserved.
  </div> <!-- footer close -->
-
 </div> <!-- container close -->
 	
-</s_t3>
+	 <div id="header">
+		 <span id="blog_img" style="background-image: url([##_image_##]);" onClick="location.href='[##_blog_link_##]'"></span>
+		<span id='desktop-search'>				
+    <s_search>
+			<label for="searchSubmit">
+			<span id="desktop-search-icon">
+				<i class="fa fa-search" aria-hidden="true"></i>
+				</span></label>				
+      <input type="text" name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }" id="searchInput"
+      />
+			<input value="검색" type="button" onclick="[##_search_onclick_submit_##]" class="submit" style="display:none;" id="searchSubmit"/>
+    </s_search>
+		</span>
+    <span id="category-button" onclick="toggle()"><i class="fas fa-bars"></i></span>
+    
+    <div id="category-container" style="display:none;">
+    <div id="overlap">
+        </div>
+			
+     <div id="close" onclick="toggle()"><i class="fas fa-times"></i></div>   
+    <div id="category">
+			
+			<div class="search">
+				<div id="search-icon">
+				<i class="fa fa-search" aria-hidden="true"></i>
+				</div>				
+    <s_search>
+      <input type="text" name="[##_search_name_##]" value="[##_search_text_##]" onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }" id="searchInput"
+      />
+    </s_search>
+  </div>
+			
+			 <div id="category-text">
+        [##_category_list_##]
+         </div>
+			<div id="category2">
+				<ul>
+					<a href='/notice'>
+				  <li style="list-style:none;">공지사항</li>
+				 </a>
+					<a href='[##_guestbook_link_##]'>
+					<li>방명록</li></a>				
+				</ul>
+			</div>
+			
+</div>
 
+    </div>
+    </div>
+
+</s_t3>
+<script>
+        function toggle(){
+            $("#category-container").toggle();
+        }
+	/**$(function(){
+$(window).scroll(function(){  //스크롤하면 아래 코드 실행
+       var num = $(this).scrollTop();  // 스크롤값
+       if( num > 120 ){  // 스크롤을 36이상 했을 때
+         $("#header").css("position","fixed");
+       }else{
+             $("#header").css("position","absolute");
+       }
+  });
+});**/
+    </script>
 <script src="./images/script.js"></script>
+<script src="./images/all.min.js"></script>
 </body>
 </html>
 
