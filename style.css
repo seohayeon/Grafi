@@ -5,6 +5,8 @@ body{
 	min-height:100vh;
 	padding-top: 3.5rem;
 }
+#tagblock{margin-left:0.1rem;padding-left:0.5rem;padding-right:0.5rem; border-radius:1px;background:#E7F6F9;color:#57B2C2;}
+.taglog > ul > li {float:left; margin:0 0 10px 10px}
 a:link { color: #5e9aee; text-decoration: none;}
 a:visited { color: #5e9aee; text-decoration: none;}
 a:hover { color: #5e9aee; text-decoration: none;}
